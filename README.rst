@@ -1,5 +1,6 @@
+===================
 Django-Tags-Steroid
--------------------
+===================
 
 A collection of usefull template tags and filters for the django framework
 
@@ -18,3 +19,8 @@ Quick Start
 2. To use the tags in your templates load it like this:
 
     {% load tagssteroid %}
+
+Usage
+-----
+
+**calender filter**
