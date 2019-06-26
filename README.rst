@@ -1,3 +1,5 @@
+.. figure:: https://travis-ci.org/pfitzer/django-tags-steroids.svg?branch=master
+
 ===================
 Django-Tags-Steroid
 ===================
