@@ -1,4 +1,4 @@
-|TravisLink|_ |PyupLink|_ |PyupBlocker|_ |License|
+|TravisLink| |PyupLink| |PyupBlocker| |License| |Docs|
 
 ===================
 Django-Tags-Steroid
@@ -54,9 +54,17 @@ Usage
 
 .. _Documentation: https://django-tags-steroid.readthedocs.io/en/latest/
 .. |TravisLink| image:: https://travis-ci.org/pfitzer/django-tags-steroids.svg?branch=master
-.. _TravisLink: https://travis-ci.org/pfitzer/django-tags-steroids
+    :target: https://travis-ci.org/pfitzer/django-tags-steroids
+    :alt: Travis-Ci
 .. |PyupLink| image:: https://pyup.io/repos/github/pfitzer/django-tags-steroids/shield.svg
-.. _PyupLink: https://pyup.io/account/repos/github/pfitzer/django-tags-steroids/
+    :target: https://pyup.io/account/repos/github/pfitzer/django-tags-steroids/
+    :alt: PyUp
 .. |PyupBlocker| image:: https://pyup.io/repos/github/pfitzer/django-tags-steroids/python-3-shield.svg
-.. _PyupBlocker: https://pyup.io/repos/github/pfitzer/django-tags-steroids/
+    :target: https://pyup.io/repos/github/pfitzer/django-tags-steroids/
+    :alt: PyUp
 .. |License| image:: https://img.shields.io/github/license/pfitzer/django-tags-steroids.svg
+    :target: https://github.com/pfitzer/django-tags-steroids/blob/master/LICENSE
+    :alt: License
+.. |Docs| image:: https://readthedocs.org/projects/django-tags-steroids/badge/?version=latest&style=flat
+    :target: https://django-tags-steroid.readthedocs.io/en/latest/
+    :alt: Read the Docs
