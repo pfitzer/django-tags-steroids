@@ -2,7 +2,8 @@
 Django-Tags-Steroid
 ===================
 
-A collection of usefull template tags and filters for the django framework
+A collection of usefull template tags and filters for the django framework.
+Take a look at the full Documentation_.
 
 Quick Start
 -----------
@@ -48,3 +49,5 @@ Usage
 
     # substraction
     <p>{{ 10|sub:5 }}</p>
+
+.. _Documentation: https://django-tags-steroid.readthedocs.io/en/latest/
