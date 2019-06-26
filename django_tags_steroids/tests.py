@@ -41,4 +41,4 @@ class MathTestCase(TestCase):
 
     def test_divide(self):
         self.assertEqual(4.00, div(20, 5))
-        self.assertEqual(6.85, div(27.4, 4))
+        self.assertEqual(6.85, div('27.4', '4'))

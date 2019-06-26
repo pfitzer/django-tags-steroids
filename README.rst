@@ -13,7 +13,7 @@ Quick Start
 
     INSTALLED_APPS = [
         ...
-        'django_tags_steroid',
+        'django_tags_steroids',
     ]
 
 Usage
