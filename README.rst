@@ -1,4 +1,4 @@
-|TravisLink|_ |PyupLink|_ |PyupBlocker|_
+|TravisLink|_ |PyupLink|_ |PyupBlocker|_ |License|
 
 ===================
 Django-Tags-Steroid
@@ -59,3 +59,4 @@ Usage
 .. _PyupLink: https://pyup.io/account/repos/github/pfitzer/django-tags-steroids/
 .. |PyupBlocker| image:: https://pyup.io/repos/github/pfitzer/django-tags-steroids/python-3-shield.svg
 .. _PyupBlocker: https://pyup.io/repos/github/pfitzer/django-tags-steroids/
+.. |License| image:: https://img.shields.io/github/license/pfitzer/django-tags-steroids.svg

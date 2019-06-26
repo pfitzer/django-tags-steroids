@@ -1,6 +1,8 @@
 import os
 from setuptools import find_packages, setup
 
+from __version__ import version
+
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
 
@@ -8,13 +10,13 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-tags-steroids',
-    version='0.1',
-    find_packages=find_packages(),
+    version=version,
+    packages=find_packages(),
     include_package_data=True,
     license='BSD License',
-    description='Django template Tags on steroids.',
+    description='Django template tags and filter library.',
     long_description=README,
-    url='',
+    url='https://github.com/pfitzer/django-tags-steroids',
     author='Michael Pfister',
     author_email='michael@mp-development.de',
     classifiers=[
