@@ -52,7 +52,7 @@ Usage
     // substraction
     <p>{{ 10|sub:5 }}</p>
 
-.. _Documentation: https://django-tags-steroid.readthedocs.io/en/latest/
+.. _Documentation: https://django-tags-steroids.readthedocs.io/en/latest/
 .. |TravisLink| image:: https://travis-ci.org/pfitzer/django-tags-steroids.svg?branch=master
     :target: https://travis-ci.org/pfitzer/django-tags-steroids
     :alt: Travis-Ci
