@@ -66,5 +66,5 @@ Usage
     :target: https://github.com/pfitzer/django-tags-steroids/blob/master/LICENSE
     :alt: License
 .. |Docs| image:: https://readthedocs.org/projects/django-tags-steroids/badge/?version=latest&style=flat
-    :target: https://django-tags-steroid.readthedocs.io/en/latest/
+    :target: https://django-tags-steroids.readthedocs.io/en/latest/
     :alt: Read the Docs
