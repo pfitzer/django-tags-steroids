@@ -12,6 +12,8 @@
 #
 import os
 import sys
+sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('../'))
 sys.path.insert(0, os.path.abspath('../django_tags_steroids/templatetags/'))
 
 
@@ -59,7 +61,6 @@ html_theme = 'bizstyle'
 
 html_theme_options = {
     "rightsidebar": "false",
-    "relbarbgcolor": "black"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
