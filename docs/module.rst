@@ -14,6 +14,14 @@ Math Filter
     :undoc-members:
     :show-inheritance:
 
+Parameter Filter
+================
+
+.. automodule:: steroidsparameter
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 
 * :ref:`genindex`
 * :ref:`modindex`

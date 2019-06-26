@@ -1,8 +1,11 @@
 from __future__ import unicode_literals
 
 from django.test import TestCase
+from unittest.mock import patch
+from django.http import QueryDict
 from django_tags_steroids.templatetags.steroidscal import *
 from django_tags_steroids.templatetags.steroidsmath import *
+from django_tags_steroids.templatetags.steroidsparameter import *
 
 class CalendarTestCase(TestCase):
 
@@ -42,3 +45,12 @@ class MathTestCase(TestCase):
     def test_divide(self):
         self.assertEqual(4.00, div(20, 5))
         self.assertEqual(6.85, div('27.4', '4'))
+
+class ParameterTestCase(TestCase):
+
+    @patch('django.http.HttpRequest')
+    def test_param_replace(self, MockHttpRequest):
+        MockHttpRequest.GET = QueryDict(query_string='page=1&foo=bar')
+        context = {'request': MockHttpRequest}
+        replaced = param_replace(context, page='2')
+        self.assertEqual('page=2&foo=bar', replaced)
