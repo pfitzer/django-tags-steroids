@@ -11,8 +11,6 @@ Welcome to django-tags-steroids's documentation!
 
 .. include:: ../README.rst
 
-Indices and tables
-==================
 
 * :ref:`genindex`
 * :ref:`modindex`

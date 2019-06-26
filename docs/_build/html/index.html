@@ -46,7 +46,6 @@
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 
   <div role="note" aria-label="source link">
@@ -83,37 +82,51 @@
 <p>A collection of usefull template tags and filters for the django framework</p>
 <div class="section" id="quick-start">
 <h3>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic">
-<li><p>Add “django_tags_steroids” to your INSTALLED_APPS setting like this:</p>
-<blockquote>
-<div><dl>
-<dt>INSTALLED_APPS = [</dt><dd><p>…</p>
-<p>‘django_tags_steroid’,</p>
-</dd>
-</dl>
-<p>]</p>
-</div></blockquote>
-</li>
-<li><p>To use the tags in your templates load it like this:</p>
-<blockquote>
-<div><p>{% load tagssteroid %}</p>
-</div></blockquote>
-</li>
+<ol class="arabic simple">
+<li><p>Add “django_tags_steroids” to your INSTALLED_APPS setting like this:</p></li>
 </ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="o">...</span>
+    <span class="s1">&#39;django_tags_steroid&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="usage">
 <h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
-<p><strong>calender filter</strong></p>
+<p><strong>calender filters</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="o">%</span> <span class="n">load</span> <span class="n">steroidscal</span> <span class="o">%</span><span class="p">}</span>
+
+<span class="c1"># day_name</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">{{</span> <span class="n">date</span><span class="o">.</span><span class="n">day</span><span class="o">|</span><span class="n">day_name</span> <span class="p">}}</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+
+<span class="c1"># day_abbr</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">{{</span> <span class="n">date</span><span class="o">.</span><span class="n">day</span><span class="o">|</span><span class="n">day_abr</span> <span class="p">}}</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+
+<span class="c1"># month_name</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">{{</span> <span class="n">date</span><span class="o">.</span><span class="n">month</span><span class="o">|</span><span class="n">month_name</span> <span class="p">}}</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</pre></div>
 </div>
+<p><strong>math filters</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="o">%</span> <span class="n">load</span> <span class="n">steroidsmath</span> <span class="o">%</span><span class="p">}</span>
+
+<span class="c1"># get absolute</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">{{</span> <span class="o">-</span><span class="mf">2.541</span><span class="o">|</span><span class="nb">abs</span> <span class="p">}}</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+
+<span class="c1"># addition</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">{{</span> <span class="mi">5</span><span class="o">|</span><span class="n">add</span><span class="p">:</span><span class="mi">3</span> <span class="p">}}</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+
+<span class="c1"># substraction</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="p">{{</span> <span class="mi">10</span><span class="o">|</span><span class="n">sub</span><span class="p">:</span><span class="mi">5</span> <span class="p">}}</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</pre></div>
 </div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
+</div>
+</div>
 </div>
 
 

@@ -9,18 +9,42 @@ Quick Start
 
 1. Add "django_tags_steroids" to your INSTALLED_APPS setting like this:
 
+::
+
     INSTALLED_APPS = [
         ...
-
         'django_tags_steroid',
-
     ]
-
-2. To use the tags in your templates load it like this:
-
-    {% load tagssteroid %}
 
 Usage
 -----
 
-**calender filter**
+**calender filters**
+
+::
+
+    {% load steroidscal %}
+
+    # day_name
+    <p>{{ date.day|day_name }}</p>
+
+    # day_abbr
+    <p>{{ date.day|day_abr }}</p>
+
+    # month_name
+    <p>{{ date.month|month_name }}</p>
+
+**math filters**
+
+::
+
+    {% load steroidsmath %}
+
+    # get absolute
+    <p>{{ -2.541|abs }}</p>
+
+    # addition
+    <p>{{ 5|add:3 }}</p>
+
+    # substraction
+    <p>{{ 10|sub:5 }}</p>

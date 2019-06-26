@@ -1,13 +1,19 @@
-Filters and Tags
+Calendar Filter
 ================
 
-.. automodule:: django_tags_steroids.templatetags.tagssteroids
+.. automodule:: steroidscal
     :members:
     :undoc-members:
     :show-inheritance:
 
-Indices and tables
-==================
+Math Filter
+===========
+
+.. automodule:: steroidsmath
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 
 * :ref:`genindex`
 * :ref:`modindex`
