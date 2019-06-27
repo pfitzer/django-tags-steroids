@@ -54,3 +54,8 @@ class ParameterTestCase(TestCase):
         context = {'request': MockHttpRequest}
         replaced = param_replace(context, page='2')
         self.assertEqual('page=2&foo=bar', replaced)
+
+    def test_param_remove(self):
+        params = QueryDict(query_string='foo=bar&test=2')
+        nparams = param_remove(params, 'test')
+        self.assertEqual(nparams, 'foo=bar')

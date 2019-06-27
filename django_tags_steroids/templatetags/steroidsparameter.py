@@ -10,7 +10,7 @@ def param_replace(context, **kwargs):
 
     :param dict context:
     :param kwargs:
-    :return:
+    :rtype: str
     """
     d = context['request'].GET.copy()
     for k,v in kwargs.items():
@@ -24,9 +24,9 @@ def param_remove(params, arg):
     """
     removes given arg from url parameters querydict
 
-    :param dict params:
-    :param arg:
-    :return:
+    :param QueryDict params:
+    :param str arg:
+    :rtype: str
     """
     d = params.copy()
     if arg in d:

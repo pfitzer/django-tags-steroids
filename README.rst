@@ -52,6 +52,38 @@ Usage
     // substraction
     <p>{{ 10|sub:5 }}</p>
 
+**parameter filter**
+
+.. code-block:: html
+
+    {% load steroidsparameters %}
+
+    /**
+    * example for usage of param_replace in pagination
+    */
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            {% if page_obj.has_previous %}
+                <li class="page-item"><a class="page-link"
+                                         href="?{% param_replace page=1 %}">{% trans 'first' %}</a>
+                </li>
+                <li class="page-item"><a class="page-link"
+                                         href="?{% param_replace page=page_obj.previous_page_number %}">{{ page_obj.previous_page_number }}</a>
+                </li>
+            {% endif %}
+            <li class="page-item active"><a class="page-link"
+                                            href="?{{ page_obj.number }}">{{ page_obj.number }}</a>
+            </li>
+            {% if page_obj.has_next %}
+                <li class="page-item"><a class="page-link"
+                                         href="?{% param_replace page=page_obj.next_page_number %}">{{ page_obj.next_page_number }}</a>
+                </li>
+                <li class="page-item"><a class="page-link"
+                                         href="?{% param_replace page=page_obj.paginator.num_pages %}">{% trans 'last' %}</a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
 .. _Documentation: https://django-tags-steroids.readthedocs.io/en/latest/
 .. |TravisLink| image:: https://travis-ci.org/pfitzer/django-tags-steroids.svg?branch=master
     :target: https://travis-ci.org/pfitzer/django-tags-steroids
