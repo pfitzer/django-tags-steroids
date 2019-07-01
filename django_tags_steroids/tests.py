@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 
+from urllib import parse
 from django.test import TestCase
 from unittest.mock import patch
 from django.http import QueryDict
@@ -53,7 +54,8 @@ class ParameterTestCase(TestCase):
         MockHttpRequest.GET = QueryDict(query_string='page=1&foo=bar')
         context = {'request': MockHttpRequest}
         replaced = param_replace(context, page='2')
-        self.assertEqual('page=2&foo=bar', replaced)
+        parced = parse.parse_qs(replaced)
+        self.assertEqual(parced['page'][0], '2')
 
     def test_param_remove(self):
         params = QueryDict(query_string='foo=bar&test=2')
