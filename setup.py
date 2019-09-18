@@ -20,6 +20,7 @@ setup(
     author='Michael Pfister',
     author_email='michael@mp-development.de',
     setup_requires=['Django>=2.2'],
+    install_requires=['Django>=2.2'],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
