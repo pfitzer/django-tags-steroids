@@ -52,6 +52,12 @@ Usage
     // substraction
     <p>{{ 10|sub:5 }}</p>
 
+    // divide
+    <p>{{ 10|div:5 }}</p>
+
+    // multiply
+    <p>{{ 2|mul:5 }}</p>
+
 **parameter filter**
 
 .. code-block:: html
@@ -60,6 +66,8 @@ Usage
 
     /**
     * example for usage of param_replace in pagination
+    *
+    * useful for paginated sites with filters for example
     */
     <nav aria-label="Page navigation example">
         <ul class="pagination">
