@@ -3,7 +3,7 @@ argh==0.26.2
 Babel==2.7.0
 certifi==2019.6.16
 chardet==3.0.4
-Django==2.2.5
+Django==2.2.7
 docutils==0.14
 idna==2.8
 imagesize==1.1.0
